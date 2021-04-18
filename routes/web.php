@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index')->middleware('installed')->name('home');
 
-// Application Routes
+// Application Routes for saas
 Route::group(['namespace' => 'Application', 'middleware' => ['installed']], function () { 
 
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
